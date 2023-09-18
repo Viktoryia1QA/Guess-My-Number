@@ -45,7 +45,7 @@ checkBtn.addEventListener('click', function () {
     } else if (guess !== secretNumber) {
         if (score > 1) {
             displayMessage(guess > secretNumber ? 'Too high!📈' : 'Too low! 📉');
-            score -= 1; // score = score - 1;
+            score -= 1;
             gameScore.textContent = score;
         } else {
             displayMessage('You lost the game! 💥');
@@ -55,33 +55,6 @@ checkBtn.addEventListener('click', function () {
             gameScore.textContent = 0;
         }
     }
-    //     // Too high
-    // } else if (guess > secretNumber) {
-    //     if (score > 1) {
-    //         resultMessage.textContent = 'Too high!📈';
-    //         score -= 1; // score = score - 1;
-    //         gameScore.textContent = score;
-    //     } else {
-    //         resultMessage.textContent = 'You lost the game! 💥';
-    //         background.style.backgroundColor = '#e70d2a';
-    //         gameResult.textContent = '😔';
-    //         gameResult.style.width = '30rem';
-    //         gameScore.textContent = 0;
-    //     }
-    //     //   Too low
-    // } else if (guess < secretNumber) {
-    //     if (score > 1) {
-    //         resultMessage.textContent = 'Too low! 📉';
-    //         score -= 1;
-    //         gameScore.textContent = score;
-    //     } else {
-    //         resultMessage.textContent = 'You lost the game! 💥';
-    //         background.style.backgroundColor = '#e70d2a';
-    //         gameResult.textContent = '😔';
-    //         gameResult.style.width = '30rem';
-    //         gameScore.textContent = 0;
-    //     }
-    // }
 })
 
 againBtn.addEventListener('click', function () {
